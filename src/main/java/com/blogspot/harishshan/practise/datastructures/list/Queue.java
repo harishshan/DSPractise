@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise;
+package com.blogspot.harishshan.practise.datastructures.list;
 
 public class Queue {
 	public static final int MAX = 5;

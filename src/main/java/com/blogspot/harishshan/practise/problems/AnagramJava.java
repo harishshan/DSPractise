@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise1;
+package com.blogspot.harishshan.practise.problems;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise;
+package com.blogspot.harishshan.practise.problems;
 
 import java.util.Arrays;
 import java.util.Comparator;

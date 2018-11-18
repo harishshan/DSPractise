@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise;
+package com.blogspot.harishshan.practise.java.string;
 
 public class ReverseString {
 

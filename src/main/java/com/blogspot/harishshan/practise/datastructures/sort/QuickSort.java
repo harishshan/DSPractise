@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise;
+package com.blogspot.harishshan.practise.datastructures.sort;
 
 public class QuickSort {
 	public static int[] input = {24, 2, 35, 14, 15, 25, 8, 9, 32};

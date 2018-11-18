@@ -1,4 +1,4 @@
-package com.blogspot.harishshan.practise1;
+package com.blogspot.harishshan.practise.designpatterns;
 import java.util.List;
 import java.util.ArrayList;
 class Originator {
