@@ -40,7 +40,7 @@ public class BinarySearchTree {
 		insert(root, 80);
 		insert(root, 92);
 		insert(root, 5);
-		connectRecur(root);
+		connectRecursive(root);
 		inorder(root);
 		System.out.println("-->"+search(root, 12));
 		System.out.println("Height:"+height(root));
@@ -96,15 +96,16 @@ public class BinarySearchTree {
 			return search(_root.right, _data);
 		return search(_root.left, _data);
 	}
-	public static void connectRecur(Node _root) {
+	//To set the nextRight property of the tree
+	public static void connectRecursive(Node _root) {
 		if(_root==null)
 			return;
 		if(_root.left !=null)
 			_root.left.nextRight = _root.right;
 		if(_root.right !=null)
 			_root.right.nextRight = (_root.nextRight!=null)? _root.nextRight.left : null;
-		connectRecur(_root.left);
-		connectRecur(_root.right);
+		connectRecursive(_root.left);
+		connectRecursive(_root.right);
 	}
 	public static int height(Node _root) {
 		if(_root == null)
