@@ -1,14 +1,16 @@
 package com.blogspot.harishshan.practise.java.thread;
 
-public class ExampleThread implements Runnable{
+public class ExampleRunnableImpl implements Runnable{
 	int minValue, maxValue, sleepMillisecond;
 	String command;
-	public ExampleThread(String command, int minValue, int maxValue,int sleepMillisecond) {
+	
+	public ExampleRunnableImpl(String command, int minValue, int maxValue,int sleepMillisecond) {
 		this.command = command;
 		this.minValue = minValue;
 		this.maxValue = maxValue;
 		this.sleepMillisecond = sleepMillisecond;
 	}
+	
 	public void run() {
 		try {
 			System.out.println(Thread.currentThread().getName()+" Start, Command = "+command);
@@ -16,9 +18,9 @@ public class ExampleThread implements Runnable{
 				System.out.println(command+" - " + i);
 				Thread.sleep(sleepMillisecond);
 			}
-			 System.out.println(Thread.currentThread().getName()+" End");
+			System.out.println(Thread.currentThread().getName()+" End, Command = "+command);
 		}catch(Exception ex) {
-			ex.printStackTrace();			
-		}		
+			ex.printStackTrace();
+		}
 	}
 }
